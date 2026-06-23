@@ -19,3 +19,9 @@ jobs:
 
       - name: Show Current Folder
         run: pwd
+
+      - name: System Info
+        run: |
+          hostname
+          whoami
+          ipconfig
