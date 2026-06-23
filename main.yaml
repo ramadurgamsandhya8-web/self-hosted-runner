@@ -1,0 +1,23 @@
+name: Self Hosted Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Check Runner Machine
+        run: hostname
+
+      - name: Print Message
+        run: echo "Self Hosted Runner Working Successfully"
+
+      - name: Show Current Folder
+        run: pwd
