@@ -25,3 +25,6 @@ jobs:
           hostname
           whoami
           ipconfig
+
+      - name: Docker Version
+        run: docker version
