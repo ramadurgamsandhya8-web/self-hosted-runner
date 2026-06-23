@@ -28,3 +28,9 @@ jobs:
 
       - name: Docker Version
         run: docker version
+
+      - name: Build Docker Image
+        run: docker build -t self-hosted-app .
+
+      - name: Show Docker Images
+        run: docker images
